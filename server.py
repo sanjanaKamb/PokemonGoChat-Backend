@@ -13,7 +13,7 @@ from OpenSSL import SSL
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy dog'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://pogochat:nianticpoke2016@pogochat.cznsggjqdrnm.us-west-2.rds.amazonaws.com:3306/pogochat'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://pogochat:[password]@pogochat.cznsggjqdrnm.us-west-2.rds.amazonaws.com:3306/pogochat'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 
 # extensions
